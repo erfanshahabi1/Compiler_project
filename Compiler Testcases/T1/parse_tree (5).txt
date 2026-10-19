@@ -1,0 +1,59 @@
+└── program
+    └── declaration_list
+        └── declaration
+            ├── declaration_initial
+            │   ├── type_specifier
+            │   │   └── (KEYWORD, void)
+            │   └── (ID, main)
+            └── declaration_prime
+                └── fun_declaration_prime
+                    ├── (SYMBOL, ()
+                    ├── params
+                    │   └── (KEYWORD, void)
+                    ├── (SYMBOL, ))
+                    └── compound_stmt
+                        ├── (SYMBOL, {)
+                        ├── declaration_list
+                        │   ├── declaration
+                        │   │   ├── declaration_initial
+                        │   │   │   ├── type_specifier
+                        │   │   │   │   └── (KEYWORD, int)
+                        │   │   │   └── (ID, a)
+                        │   │   └── declaration_prime
+                        │   │       └── var_declaration_prime
+                        │   │           └── (SYMBOL, ;)
+                        │   └── declaration
+                        │       ├── declaration_initial
+                        │       │   ├── type_specifier
+                        │       │   │   └── (KEYWORD, int)
+                        │       │   └── (ID, b)
+                        │       └── declaration_prime
+                        │           └── var_declaration_prime
+                        │               └── (SYMBOL, ;)
+                        ├── statement_list
+                        │   └── statement
+                        │       └── expression_stmt
+                        │           ├── expression
+                        │           │   ├── (ID, a)
+                        │           │   └── b
+                        │           │       ├── (SYMBOL, =)
+                        │           │       └── expression
+                        │           │           ├── (ID, a)
+                        │           │           └── b
+                        │           │               ├── (SYMBOL, +)
+                        │           │               └── expression
+                        │           │                   ├── (ID, b)
+                        │           │                   └── b
+                        │           │                       └── simple_expression_prime
+                        │           │                           ├── additive_expression_prime
+                        │           │                           │   ├── term_prime
+                        │           │                           │   │   ├── factor_prime
+                        │           │                           │   │       └── epsilon
+                        │           │                           │   │   └── g
+                        │           │                           │   │       └── epsilon
+                        │           │                           │   └── d
+                        │           │                           │       └── epsilon
+                        │           │                           └── c
+                        │           │                               └── epsilon
+                        │           └── (SYMBOL, ;)
+                        └── (SYMBOL, })
